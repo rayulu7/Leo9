@@ -13,7 +13,7 @@ const SunIcon = () => (
 
 const Hero = React.memo(() => {
   useEffect(() => {
-    // Animate lion image
+   
     gsap.fromTo(
       '#lionCanvas img',
       { opacity: 0, scale: 0.8, rotation: -10 },
@@ -32,7 +32,6 @@ const Hero = React.memo(() => {
       }
     )
 
-    // Animate hero titles
     gsap.fromTo(
       '.hero-title',
       { opacity: 0, y: 50 },
@@ -50,7 +49,7 @@ const Hero = React.memo(() => {
       }
     )
 
-    // Animate hero paragraph
+    
     gsap.fromTo(
       '.hero-para',
       { opacity: 0, y: 30 },
@@ -68,7 +67,7 @@ const Hero = React.memo(() => {
       }
     )
 
-    // Animate scroll down icon
+    
     gsap.fromTo(
       '.scroll_Down_box',
       { opacity: 0, y: 20 },
@@ -86,7 +85,7 @@ const Hero = React.memo(() => {
       }
     )
 
-    // Animate sun icon for light theme
+    
     gsap.fromTo(
       '.sun-icon',
       { opacity: 0, scale: 0 },
@@ -106,7 +105,7 @@ const Hero = React.memo(() => {
 
   return (
     <section className="home-banner relative bg-white dark:bg-black text-black dark:text-white py-24 min-h-screen flex items-center animate-fadeIn section-transition transition-colors duration-300">
-      {/* Sun Icon for Light Theme */}
+      
       <SunIcon />
 
       <div className="lionAnimTriggerStart"></div>
@@ -114,7 +113,7 @@ const Hero = React.memo(() => {
         <div className="lion-box w-full md:w-1/2 flex justify-center mb-12 md:mb-0 animate-slideInLeft">
           <div id="lionCanvas" className="lightAnim">
             <div className="initDot"></div>
-            {/* Placeholder for lion animation */}
+          
             <img
               src="https://leo9studio.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flion-polygon.3a3a7a3a.png&w=1920&q=75"
               alt="Polygon Lion"
@@ -140,7 +139,7 @@ const Hero = React.memo(() => {
           </div>
         </div>
       </div>
-      {/* Scroll Down */}
+    
       <div className="scroll_Down_box absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <span className="text-black dark:text-white">Scroll</span>
         <div className="scroll_Down">

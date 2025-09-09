@@ -13,7 +13,7 @@ const SunIcon = () => (
 
 const Expertise = React.memo(() => {
   useEffect(() => {
-    // Animate title
+   
     gsap.fromTo(
       '.h-cont h4, .h-cont h5',
       { opacity: 0, y: 30 },
@@ -31,7 +31,7 @@ const Expertise = React.memo(() => {
       }
     )
 
-    // Animate map dots
+    
     gsap.fromTo(
       '.exp',
       { scale: 0, rotation: -180 },
@@ -49,7 +49,7 @@ const Expertise = React.memo(() => {
       }
     )
 
-    // Animate industry list
+    
     gsap.fromTo(
       'ul li',
       { opacity: 0, x: -20 },
@@ -75,7 +75,7 @@ const Expertise = React.memo(() => {
 
   return (
     <section className="h-expertise-box bg-white dark:bg-black text-black dark:text-white py-16 animate-fadeIn section-transition transition-colors duration-300">
-      {/* Sun Icon for Light Theme */}
+     
       <SunIcon />
 
       <div className="stopSec stopSecAbs stopSecExpertise"></div>
@@ -88,7 +88,7 @@ const Expertise = React.memo(() => {
         </div>
         <div className="h-img expertiseImg relative mb-8">
           <div id="mapCanvas" className="absolute inset-0">
-            {/* Animated elements */}
+            
             <div className="exp exp1 bg-black dark:bg-white rounded-full w-8 h-8 absolute top-10 left-10 animate-bounce"></div>
             <div className="exp exp2 bg-black dark:bg-white rounded-full w-6 h-6 absolute top-20 right-20 animate-pulse"></div>
             <div className="exp exp3 bg-black dark:bg-white rounded-full w-10 h-10 absolute bottom-10 left-1/2 animate-spin"></div>

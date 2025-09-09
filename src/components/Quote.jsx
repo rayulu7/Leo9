@@ -22,16 +22,16 @@ const Quote = React.memo(() => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission
+    
     console.log('Form submitted:', formData)
   }
 
   return (
     <section className="h-quote-box bg-black dark:bg-white text-white dark:text-black py-16 animate-fadeIn section-transition transition-colors duration-300">
-      {/* Half Moon Icon for Dark Theme */}
+     
       <MoonIcon />
 
-      {/* Stars Background */}
+      
       <div className="stars-bg">
         <div className="star"></div>
         <div className="star"></div>
@@ -56,7 +56,7 @@ const Quote = React.memo(() => {
           <div className="w100 wwr-animation animate-slideInRight">
             <div className="h-img quoteImg relative">
               <div id="quoteCanvas" className="absolute inset-0">
-                {/* Animated elements */}
+                
                 <div className="quo quo1 bg-white dark:bg-black rounded-full w-12 h-12 absolute top-10 left-10 animate-bounce"></div>
                 <div className="quo quo2 bg-white dark:bg-black rounded-full w-8 h-8 absolute top-20 right-20 animate-pulse"></div>
                 <div className="quo quo3 bg-white dark:bg-black rounded-full w-16 h-16 absolute bottom-10 left-1/2 animate-spin"></div>

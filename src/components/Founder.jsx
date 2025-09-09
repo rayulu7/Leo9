@@ -15,7 +15,7 @@ const MoonIcon = () => (
 
 const Founder = React.memo(() => {
   useEffect(() => {
-    // Animate meet founder text
+    
     gsap.fromTo(
       '.meet-founder-box h6',
       { opacity: 0, y: 30 },
@@ -32,7 +32,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate founder image
+    
     gsap.fromTo(
       '.founder-pic img',
       { opacity: 0, scale: 0.8, rotation: -10 },
@@ -50,7 +50,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate founder details
+    
     gsap.fromTo(
       '.founder-pic-box h4, .founder-pic-box p',
       { opacity: 0, x: -30 },
@@ -68,7 +68,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate awards
+   
     gsap.fromTo(
       '.h-award-box li',
       { opacity: 0, scale: 0 },
@@ -86,7 +86,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate what clients say
+    
     gsap.fromTo(
       '.founder-in h6',
       { opacity: 0, y: 30 },
@@ -103,7 +103,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate testimonial slides
+   
     gsap.fromTo(
       '.hf-container',
       { opacity: 0, y: 50 },
@@ -121,7 +121,7 @@ const Founder = React.memo(() => {
       }
     )
 
-    // Animate stars
+   
     gsap.fromTo(
       '.star',
       { opacity: 0, scale: 0 },

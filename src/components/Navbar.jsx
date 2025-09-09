@@ -10,12 +10,11 @@ export default function Navbar({ theme, toggleTheme }) {
   return (
     <nav className="w-full flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-4 border-b border-black dark:border-white bg-white dark:bg-black fixed top-0 left-0 z-50 animate-fadeIn transition-colors duration-300">
       <div className="flex items-center space-x-2 sm:space-x-4">
-        {/* Logo */}
+        
         <div className="text-xl sm:text-2xl font-bold cursor-pointer select-none text-black dark:text-white animate-slideInLeft">
           leo9
         </div>
 
-        {/* Menu Items - Desktop */}
         <ul className="hidden md:flex space-x-4 lg:space-x-8 text-base lg:text-lg font-medium text-black dark:text-white animate-slideInRight">
           <li className="cursor-pointer hover:underline transition-all duration-300">Work</li>
           <li className="cursor-pointer hover:underline transition-all duration-300">Services <span className="text-black dark:text-white">•</span></li>
@@ -25,16 +24,16 @@ export default function Navbar({ theme, toggleTheme }) {
         </ul>
       </div>
 
-      {/* Right side: Theme toggle, Contact button, Mobile menu toggle */}
+     
       <div className="flex items-center space-x-2 sm:space-x-4">
-        {/* Theme toggle button */}
+      
         <button
           onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')}
           aria-label="Toggle Theme"
           className="p-2 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 animate-bounceIn"
         >
           {theme === 'dark' ? (
-            // Sun icon to switch to light theme
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-black dark:text-white"
@@ -51,7 +50,7 @@ export default function Navbar({ theme, toggleTheme }) {
               />
             </svg>
           ) : (
-            // Half moon icon to switch to dark theme
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-black dark:text-white"
@@ -65,12 +64,12 @@ export default function Navbar({ theme, toggleTheme }) {
           )}
         </button>
 
-        {/* Contact button - Hidden on mobile */}
+       
         <button className="hidden md:block bg-black text-white dark:bg-white dark:text-black font-semibold px-4 lg:px-6 py-2 rounded-md hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white border border-black dark:border-white transition-all duration-300 animate-bounceIn text-sm lg:text-base">
           Contact
         </button>
 
-        {/* Mobile menu toggle */}
+      
         <button
           onClick={toggleMobileMenu}
           className="md:hidden p-2 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
@@ -89,7 +88,7 @@ export default function Navbar({ theme, toggleTheme }) {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-black border-b border-black dark:border-white shadow-lg animate-slideDown">
           <ul className="flex flex-col space-y-3 sm:space-y-4 p-4 text-base sm:text-lg font-medium text-black dark:text-white">

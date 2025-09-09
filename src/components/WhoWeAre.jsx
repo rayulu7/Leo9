@@ -9,10 +9,10 @@ const MoonIcon = () => (
 const WhoWeAre = React.memo(() => {
   return (
     <section className="who-we-are-box bg-black dark:bg-white text-white dark:text-black py-16 animate-fadeIn section-transition transition-colors duration-300">
-      {/* Half Moon Icon for Dark Theme */}
+      
       <MoonIcon />
 
-      {/* Stars Background */}
+      
       <div className="stars-bg">
         <div className="star"></div>
         <div className="star"></div>
@@ -37,7 +37,7 @@ const WhoWeAre = React.memo(() => {
           <div className="w100 wwr-animation animate-slideInRight">
             <div className="h-img whoWeAreImg relative">
               <div id="whoWeAreCanvas" className="absolute inset-0">
-                {/* Animated elements */}
+                
                 <div className="wwa wwa1 bg-white dark:bg-black rounded-full w-16 h-16 absolute top-10 left-10 animate-bounce"></div>
                 <div className="wwa wwa2 bg-white dark:bg-black rounded-full w-12 h-12 absolute top-20 right-20 animate-pulse"></div>
                 <div className="wwa wwa3 bg-white dark:bg-black rounded-full w-20 h-20 absolute bottom-10 left-1/2 animate-spin"></div>

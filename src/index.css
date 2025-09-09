@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Sun and Moon SVG Components */
+
 .sun-icon {
   width: 60px;
   height: 60px;
@@ -23,7 +23,7 @@
   animation: moonGlow 4s ease-in-out infinite alternate;
 }
 
-/* Celestial Background Elements */
+
 .celestial-bg {
   position: absolute;
   top: 0;
@@ -78,7 +78,7 @@
   animation: sectionGlow 3s ease-in-out infinite;
 }
 
-/* Custom animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -322,7 +322,7 @@
   animation: bounce 1s infinite;
 }
 
-/* Animation delays */
+
 .animation-delay-200 {
   animation-delay: 0.2s;
 }
@@ -335,17 +335,17 @@
   animation-delay: 0.6s;
 }
 
-/* Font family */
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Swiper custom styles */
+
 .swiper-pagination-bullet-active {
   background-color: #000;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -363,7 +363,7 @@ body {
   background: #555;
 }
 
-/* Dark mode scrollbar */
+
 .dark ::-webkit-scrollbar-track {
   background: #374151;
 }

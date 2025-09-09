@@ -22,7 +22,7 @@ const MoonIcon = () => (
 
 const Work = React.memo(() => {
   useEffect(() => {
-    // Animate header text
+   
     gsap.fromTo(
       '.hdg1',
       { opacity: 0, y: 50 },
@@ -39,7 +39,7 @@ const Work = React.memo(() => {
       }
     )
 
-    // Animate stars
+   
     gsap.fromTo(
       '.star',
       { opacity: 0, scale: 0 },
@@ -57,7 +57,7 @@ const Work = React.memo(() => {
       }
     )
 
-    // Animate swiper slides
+   
     gsap.fromTo(
       '.h-work',
       { opacity: 0, x: 50 },
@@ -75,7 +75,7 @@ const Work = React.memo(() => {
       }
     )
 
-    // Animate view all work button
+   
     gsap.fromTo(
       '.h-work-btn button',
       { opacity: 0, scale: 0.8 },
@@ -123,10 +123,10 @@ const Work = React.memo(() => {
   return (
     <>
       <section className="h-work-hdn-box bg-black dark:bg-white text-white dark:text-black py-16 animate-fadeIn section-transition transition-colors duration-300">
-        {/* Half Moon Icon for Dark Theme */}
+        
         <MoonIcon />
 
-        {/* Stars Background */}
+       
         <div className="stars-bg">
           <div className="star"></div>
           <div className="star"></div>
@@ -149,7 +149,7 @@ const Work = React.memo(() => {
         </div>
       </section>
       <section className="h-work-box bg-white dark:bg-black text-black dark:text-white py-16 animate-fadeIn section-transition transition-colors duration-300">
-        {/* Sun Icon for Light Theme */}
+        
         <SunIcon />
 
         <div className="h-work-up">

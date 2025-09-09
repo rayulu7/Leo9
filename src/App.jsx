@@ -15,7 +15,7 @@ import './App.css'
 function App() {
   const [theme, setTheme] = useState('light')
 
-  // On mount, check localStorage or system preference for theme
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme) {
@@ -24,7 +24,7 @@ function App() {
         document.documentElement.classList.add('dark')
       }
     } else {
-      // Check system preference
+     
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         setTheme('dark')
         document.documentElement.classList.add('dark')

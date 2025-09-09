@@ -15,7 +15,7 @@ const MoonIcon = () => (
 
 const Clients = React.memo(() => {
   useEffect(() => {
-    // Animate text
+    
     gsap.fromTo(
       '.ocs-left p',
       { opacity: 0, x: -50 },
@@ -32,7 +32,7 @@ const Clients = React.memo(() => {
       }
     )
 
-    // Animate client logos
+    
     gsap.fromTo(
       '.cli-logo',
       { opacity: 0, y: 30 },
@@ -50,7 +50,7 @@ const Clients = React.memo(() => {
       }
     )
 
-    // Animate stars
+  
     gsap.fromTo(
       '.star',
       { opacity: 0, scale: 0 },
@@ -86,10 +86,10 @@ const Clients = React.memo(() => {
 
   return (
     <section className="our-clients-sec bg-black dark:bg-white text-white dark:text-black py-16 animate-fadeIn section-transition transition-colors duration-300">
-      {/* Half Moon Icon for Dark Theme */}
+      
       <MoonIcon />
 
-      {/* Stars Background */}
+      
       <div className="stars-bg">
         <div className="star"></div>
         <div className="star"></div>

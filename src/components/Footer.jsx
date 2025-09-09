@@ -4,7 +4,7 @@ import { SunIcon, MoonIcon } from '@heroicons/react/24/outline'
 export default function Footer() {
   return (
     <footer className="footer bg-white dark:bg-black text-black dark:text-white py-16 animate-fadeIn section-transition transition-colors duration-300">
-      {/* Sun Icon for Light Theme */}
+      
       <SunIcon />
 
       <div className="container mx-auto px-8 relative z-10">

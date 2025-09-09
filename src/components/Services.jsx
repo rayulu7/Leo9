@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Services = React.memo(() => {
   useEffect(() => {
-    // Animate service titles with stagger
+   
     gsap.fromTo(
       '.hs-service h2',
       { opacity: 0, x: -50 },
@@ -24,7 +24,7 @@ const Services = React.memo(() => {
       }
     )
 
-    // Animate dots
+   
     gsap.fromTo(
       '.hsdot',
       { scale: 0 },
@@ -41,7 +41,7 @@ const Services = React.memo(() => {
       }
     )
 
-    // Animate list items
+    
     gsap.fromTo(
       '.h-serv-ul-1 li, .h-serv-ul-2 li, .h-serv-ul-3 li',
       { opacity: 0, y: 20 },
@@ -59,7 +59,7 @@ const Services = React.memo(() => {
       }
     )
 
-    // Animate lines and ellipses
+    
     gsap.fromTo(
       '.hs-line, .hs-line-mob',
       { scaleX: 0 },
@@ -200,12 +200,12 @@ const Services = React.memo(() => {
             </div>
             <div className="hs-img hs-2-img">
               <div id="hs-service-2-canvas">
-                {/* Placeholder */}
+                
               </div>
             </div>
             <div className="hs-img hs-3-img">
               <div id="hs-service-3-canvas">
-                {/* Placeholder */}
+                
               </div>
             </div>
           </div>
